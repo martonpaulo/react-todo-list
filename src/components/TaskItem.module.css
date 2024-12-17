@@ -1,0 +1,24 @@
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--gray-500);
+  font-size: 0.875rem;
+  min-height: 4.5rem;
+}
+
+.default {
+  border: 1px solid var(--gray-400);
+}
+
+.done {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.taskTitle {
+  padding: 0 1rem;
+  flex: 1;
+}

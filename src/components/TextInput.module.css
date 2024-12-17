@@ -1,0 +1,12 @@
+.textInput {
+  height: 3.375rem;
+  padding: 1rem;
+  background-color: var(--gray-500);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px var(--gray-700);
+}
+
+.textInput:focus,
+.textInput:hover {
+  box-shadow: 0 0 0 1px var(--purple-dark);
+}

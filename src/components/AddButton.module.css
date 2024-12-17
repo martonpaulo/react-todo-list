@@ -1,0 +1,16 @@
+.addButton {
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: var(--blue-dark);
+  height: 3.375rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.addButton:focus,
+.addButton:hover {
+  background-color: var(--blue);
+}

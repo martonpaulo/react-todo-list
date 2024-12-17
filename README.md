@@ -91,6 +91,10 @@ Future improvements to consider:
 - [x] Add Google Fonts to the project 🌐
 - [x] Add description to the project 📝
 - [x] Write the About section in GitHub 📄
+- [ ] Fix label update when checking the task
+- [ ] Fix box size when checking the task
+- [ ] Style Checkbox component 🎨
+- [ ] Add all the functionalities to the project 🛠
 - [ ] Add Screen Recording to the README file 📹
 - [ ] Add the project to the portfolio 📂
 
