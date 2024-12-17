@@ -41,7 +41,7 @@
 
 <br />
 
-Welcome to the **React To-Do List** project! 🚀 This project simulates a social media feed, featuring functionalities such as commenting, applauding, and deleting comments. It is a React application using Vite, designed to practice important React concepts, including componentization, props, state, immutability, and hooks. Additionally, TypeScript is applied to add static typing to the application.
+This project is a simple **to-do list** application built with React, designed to help users manage their tasks efficiently. It allows users to add new tasks, mark or deselect tasks as completed, and delete tasks from the list. Additionally, the app displays the progress of task completion, providing an overview of the user's productivity. The project demonstrates key React concepts such as state management, immutability, lists and keys, props, and componentization.
 
 <br />
 
@@ -85,13 +85,13 @@ In the project directory, you can run the following scripts:
 
 Future improvements to consider:
 
-- [ ] Add Screen Recording to the README file 📹
-- [ ] Add .yml workflow & host the project on GitHub Pages 🌐
+- [x] Add .yml workflow & host the project on GitHub Pages 🌐
 - [x] Add License to the project 📜
-- [ ] Add Favicon to the project 🌐
-- [ ] Add Google Fonts to the project 🌐
-- [ ] Add description to the project 📝
-- [ ] Write the About section in GitHub 📄
+- [x] Add Favicon to the project 🌐
+- [x] Add Google Fonts to the project 🌐
+- [x] Add description to the project 📝
+- [x] Write the About section in GitHub 📄
+- [ ] Add Screen Recording to the README file 📹
 - [ ] Add the project to the portfolio 📂
 
 ## 📄 License
