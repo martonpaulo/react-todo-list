@@ -1,16 +1,21 @@
 .addButton {
   border-radius: 8px;
   padding: 1rem;
-  background-color: var(--blue-dark);
   height: 3.375rem;
   font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  background-color: var(--blue-dark);
 }
 
-.addButton:focus,
-.addButton:hover {
+.addButton:disabled {
+  background-color: var(--gray-500);
+  cursor: not-allowed;
+}
+
+.addButton:not(:disabled):hover,
+.addButton:not(:disabled):focus {
   background-color: var(--blue);
 }

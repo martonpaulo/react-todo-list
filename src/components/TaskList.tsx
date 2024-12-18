@@ -1,42 +1,29 @@
-import { useState } from 'react';
-import styles from './TaskList.module.css';
-import TaskItem from './TaskItem';
 import { ClipboardText } from 'phosphor-react';
 
-interface Task {
-  id: number;
-  title: string;
-  done: boolean;
+import type Task from '../task';
+import TaskItem from './TaskItem';
+import styles from './TaskList.module.css';
+
+interface TaskListProps {
+  tasks: Task[];
+  onCheckboxChange: (id: string) => void;
+  onDelete: (id: string) => void;
 }
 
-const initialTasks: Task[] = [
-  {
-    id: 1,
-    title:
-      'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
-    done: false,
-  },
-  {
-    id: 2,
-    title:
-      'Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer. Integer urna interdum massa libero auctor neque turpis turpis semper. Duis vel sed fames integer.',
-    done: false,
-  },
-  { id: 3, title: 'Delete a task', done: false },
-];
-
-export default function TaskList() {
-  const [tasks, setTasks] = useState<Task[]>(initialTasks);
-
+export default function TaskList({
+  tasks,
+  onCheckboxChange,
+  onDelete,
+}: TaskListProps) {
   const doneTasksLabel = () =>
     `${tasks.filter((task) => task.done).length} of ${tasks.length}`;
 
-  const handleCheckboxChange = (id: number, done: boolean) => {
-    const updatedTasks = tasks.map((task) =>
-      task.id === id ? { ...task, done } : task,
-    );
-    setTasks(updatedTasks);
-    console.log(tasks);
+  const handleCheckboxChange = (id: string) => {
+    onCheckboxChange(id);
+  };
+
+  const handleDelete = (id: string) => {
+    onDelete(id);
   };
 
   return (
@@ -64,16 +51,13 @@ export default function TaskList() {
           {tasks.map((task) => (
             <TaskItem
               key={task.id}
-              id={task.id}
-              title={task.title}
-              done={task.done}
+              task={task}
               onCheckboxChange={handleCheckboxChange}
+              onDelete={handleDelete}
             />
           ))}
         </div>
       )}
-
-      <button onClick={() => setTasks(initialTasks)}>Reset</button>
     </>
   );
 }

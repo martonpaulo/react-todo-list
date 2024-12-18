@@ -85,18 +85,21 @@ In the project directory, you can run the following scripts:
 
 Future improvements to consider:
 
-- [x] Add .yml workflow & host the project on GitHub Pages 🌐
-- [x] Add License to the project 📜
-- [x] Add Favicon to the project 🌐
-- [x] Add Google Fonts to the project 🌐
-- [x] Add description to the project 📝
-- [x] Write the About section in GitHub 📄
-- [ ] Fix label update when checking the task
-- [ ] Fix box size when checking the task
-- [ ] Style Checkbox component 🎨
-- [ ] Add all the functionalities to the project 🛠
-- [ ] Add Screen Recording to the README file 📹
-- [ ] Add the project to the portfolio 📂
+- [x] Add a YAML workflow and host the project on GitHub Pages 🌐
+- [x] Include a license in the project 📜
+- [x] Add a favicon 🌐
+- [x] Integrate Google Fonts 🌐
+- [x] Add a project description 📝
+- [x] Write the "About" section on GitHub 📄
+- [x] Implement all project functionalities 🛠
+- [x] Fix label updates when marking tasks as completed
+- [x] Change the cursor to a pointer when hovering over a task
+- [x] Adjust task height for single-line text
+- [x] Fix TaskItem size when marking tasks as completed
+- [x] Style the Checkbox component 🎨
+- [x] Configure ESLint/Prettier to enforce import order
+- [ ] Add a screen recording to the README 📹
+- [ ] Include the project in the portfolio 📂
 
 ## 📄 License
 

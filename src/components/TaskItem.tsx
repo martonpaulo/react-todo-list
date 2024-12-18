@@ -1,39 +1,45 @@
-import styles from './TaskItem.module.css';
-import { useState } from 'react';
+import { Check } from 'phosphor-react';
+
+import type Task from '../task';
 import DeleteButton from './DeleteButton';
+import styles from './TaskItem.module.css';
 
 interface TaskItemProps {
-  id: number;
-  title: string;
-  done: boolean;
-  onCheckboxChange: (id: number, done: boolean) => void;
+  task: Task;
+  onCheckboxChange: (id: string) => void;
+  onDelete: (id: string) => void;
 }
 
 export default function TaskItem({
-  id,
-  title,
-  done,
+  task,
   onCheckboxChange,
+  onDelete,
 }: TaskItemProps) {
-  const [taskDone, setTaskDone] = useState(done);
+  const handleClickTask = () => {
+    onCheckboxChange(task.id);
+  };
 
-  const handleCheckboxChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setTaskDone(event.target.checked);
-    onCheckboxChange(id, taskDone);
+  const handleDelete = () => {
+    onDelete(task.id);
   };
 
   return (
     <div
-      className={`${styles.taskItem} ${taskDone ? styles.done : styles.default}`}
+      className={`${styles.taskItem} ${task.done ? styles.done : styles.default}`}
     >
-      <input
-        type="checkbox"
-        checked={taskDone}
-        onChange={handleCheckboxChange}
-        className={styles.checkbox}
-      />
-      <p className={styles.taskTitle}>{title}</p>
-      <DeleteButton />
+      <div className={styles.checkboxAndText} onClick={handleClickTask}>
+        <div className={styles.checkboxContainer}>
+          <input
+            type="checkbox"
+            checked={task.done}
+            onChange={handleClickTask}
+            className={styles.checkbox}
+          />
+          <Check className={styles.checkIcon} />
+        </div>
+        <p className={styles.taskText}>{task.text}</p>
+      </div>
+      <DeleteButton onClick={handleDelete} />
     </div>
   );
 }

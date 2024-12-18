@@ -1,4 +1,5 @@
 import { Trash } from 'phosphor-react';
+
 import styles from './DeleteButton.module.css';
 
 export default function DeleteButton({
