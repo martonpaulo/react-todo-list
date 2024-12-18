@@ -98,8 +98,8 @@ Future improvements to consider:
 - [x] Fix TaskItem size when marking tasks as completed
 - [x] Style the Checkbox component 🎨
 - [x] Configure ESLint/Prettier to enforce import order
-- [ ] Add a screen recording to the README 📹
-- [ ] Include the project in the portfolio 📂
+- [x] Add a screen recording to the README 📹
+- [x] Include the project in the portfolio 📂
 
 ## 📄 License
 
