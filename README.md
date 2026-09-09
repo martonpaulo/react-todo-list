@@ -57,9 +57,9 @@ This is a sleek and modern feed application built using the latest web technolog
 
 ## 🌐 Live Project
 
-This project is integrated with the GitHub Pages workflow. Once a commit is made, it is deployed and hosted by GitHub Pages.
+This project is archived. The live version is preserved at archive.martonpaulo.com.
 
-Live project at: [martonpaulo.github.io/react-todo-list](https://martonpaulo.github.io/react-todo-list)
+Live project at: [archive.martonpaulo.com/react-todo-list](https://archive.martonpaulo.com/react-todo-list/)
 
 For more information about me and other projects, check out: [martonpaulo.com](https://martonpaulo.com)
 
